@@ -4,7 +4,8 @@
        Nueva wea
     </p>
     <ProductosApp msg="Welcome to Your Vue.js App"/>
-
+    <h1>How to Bind html in Vue.js?</h1>
+  <div>{{ html }}</div>
   </div>
 </template>
 
@@ -12,6 +13,14 @@
 import ProductosApp from './ProductosApp/ProductosApp.vue'
 
 export default {
+
+  data(){
+      return{
+        text: `Check the difference?`,
+        html: `<p>I am p tag with <b>bold</b> </p>`
+      }
+    },
+  
   name: 'HomeApp',
   props: {
     msg: String
@@ -20,6 +29,8 @@ export default {
     ProductosApp
   }
 }
+
+
 </script>
 
 <style scoped>
