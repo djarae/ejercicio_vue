@@ -3,17 +3,24 @@
     <p>
        ProductosApp Component!
     </p>
-
-
+    <CrearProducto msg="Welcome to Your Vue.js App"/>
+    <TablaProducto msg="Welcome to Your Vue.js App"/>
 
   </div>
 </template>
 
 <script>
+import CrearProducto from './CrearProducto/CrearProducto.vue'
+import TablaProducto from './TablaProducto/TablaProducto.vue'
+
 export default {
   name: 'ProductosApp',
   props: {
     msg: String
+  },
+  components: {
+    CrearProducto,
+    TablaProducto
   }
 }
 </script>
